@@ -6,6 +6,10 @@
   <remote  name="github"
            fetch="git://github.com/"
            review="https://review.slimroms.org/"/>
+             
+  <remote  name="mo"
+           fetch="https://github.com/MinimalOS-CAF"
+           revision="mm6.0" />
 
   <remote  name="aospb"
            fetch="https://github.com/AOSPB"
@@ -15,7 +19,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="build" remote="aospb" >
+  <project path="build" name="android_build" remote="mo" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -267,8 +271,8 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/av" name="frameworks_av" remote="aospb" />
-  <project path="frameworks/base" name="frameworks_base" remote="aospb" />
+  <project path="frameworks/av" name="frameworks_av" remote="mo" />
+  <project path="frameworks/base" name="frameworks_base" remote="mo" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -277,7 +281,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="frameworks_native" remote="aospb" />
+  <project path="frameworks/native" name="frameworks_native" remote="mo" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="frameworks_opt_bluetooth" remote="aospb" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -294,7 +298,7 @@
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="aospb" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="aospb" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="mo" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs,pdk-fs" />
@@ -375,8 +379,8 @@
    <project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-fs" />
   <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="aospb" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="aospb" />
-  <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" remote="aospb" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="mo" />
+  <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" remote="mo" />
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="aospb" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="aospb" />
   <project path="packages/apps/Email" name="packages_apps_Email" remote="aospb" />
@@ -399,7 +403,7 @@
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="aospb" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aospb" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="mo" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" />
@@ -416,11 +420,11 @@
   <project path="packages/providers/BookmarkProvider" name="platform/packages/providers/BookmarkProvider" groups="pdk-fs" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs" />
   <project path="packages/providers/CallLogProvider" name="platform/packages/providers/CallLogProvider" groups="pdk-fs" />
-  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="aospb" />
+  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="mo" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="aospb" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="aospb" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
-  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="aospb" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="mo" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" groups="pdk-fs" />
@@ -428,7 +432,7 @@
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" groups="pdk-fs" />
   <project path="packages/services/Mms" name="packages_services_Mms" remote="aospb" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="aospb" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="aospb" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="mo" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" groups="pdk-fs" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" groups="pdk-fs" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" groups="pdk-fs" />
@@ -496,10 +500,10 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <project path="manifest" name="manifest" remote="aospb" />
+  <project path="manifest" name="manifest" remote="mo" />
 
   <!-- New Additions for slim -->
-  <project path="vendor/aospb" name="vendor_aospb" remote="aospb" />
+  <project path="vendor/aospb" name="vendor_minimal" remote="mo" />
 
   <!-- CAF repos -->
   <project path="vendor/qcom/opensource/display-frameworks" name="vendor_qcom_opensource_display-frameworks" remote="aospb" />
