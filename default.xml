@@ -95,6 +95,7 @@
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" remote="aospb" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" />
+  <project path="external/ffmpeg" name="external_ffmpeg" remote="aospb" />
   <project path="external/fio" name="platform/external/fio" groups="pdk-fs" />
   <project path="external/flac" name="platform/external/flac" groups="pdk" />
   <project path="external/fonttools" name="platform/external/fonttools" groups="pdk-fs" />
@@ -215,6 +216,7 @@
   <project path="external/ppp" name="platform/external/ppp" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" />
+  <project path="external/qrngd" name="external_qrngd" remote="aospb" />
   <project path="external/regex-re2" name="platform/external/regex-re2" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/replicaisland" name="platform/external/replicaisland" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/robolectric" name="platform/external/robolectric" groups="pdk-cw-fs,pdk-fs" />
@@ -233,6 +235,7 @@
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/stagefright-plugins" name="external_stagefright-plugins" remote="aospb" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,pdk-fs" />
@@ -357,7 +360,6 @@
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
   <project path="packages/apps/BasicSmsReceiver" name="packages_apps_BasicSmsReceiver" remote="aospb" />
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="aospb" />
-  <project path="packages/apps/Browser" name="packages_apps_Browser" remote="aospb" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" groups="pdk-fs" />
   <project path="packages/apps/Calendar" name="packages_apps_Calendar" remote="aospb" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" groups="pdk-fs" />
@@ -369,11 +371,7 @@
   <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" remote="mo" />
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="mo" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="mo" />
-  <project path="packages/apps/Email" name="packages_apps_Email" remote="aospb" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
-  <project path="packages/apps/Exchange" name="packages_apps_Exchange" remote="aospb" />
-  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
-  <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="aospb" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/InCallUI" name="packages_apps_InCallUI" remote="mo" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
@@ -381,14 +379,12 @@
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="aospb" />
-  <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" />
-  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="aospb" groups="apps_nfc,pdk-fs" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" groups="pdk-fs" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="aospb" />
-  <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
+  <project path="packages/apps/SamsungServiceMode" name="packages_apps_SamsungServiceMode" remote="aospb" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="mo" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
@@ -401,7 +397,6 @@
   <project path="packages/apps/UnifiedEmail" name="packages_apps_UnifiedEmail" remote="aospb" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="aospb" />
-  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" groups="pdk-fs" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" groups="pdk-fs" />
   <project path="packages/providers/BookmarkProvider" name="platform/packages/providers/BookmarkProvider" groups="pdk-fs" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs" />
@@ -413,21 +408,13 @@
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="mo" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" groups="pdk-fs" />
-  <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" groups="pdk-fs" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" groups="pdk-fs" />
   <project path="packages/services/Mms" name="packages_services_Mms" remote="aospb" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="aospb" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="mo" />
-  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" groups="pdk-fs" />
-  <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" groups="pdk-fs" />
-  <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" groups="pdk-fs" />
-  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
-  <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" groups="pdk-fs" />
-  <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" groups="pdk-fs" />
-  <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" groups="pdk-fs" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="platform_testing" name="platform/platform_testing" />
+  <project path="prebuilt" name="prebuilt" remote="aospb" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" />
   <project path="prebuilts/clang/darwin-x86/host/3.6" name="platform/prebuilts/clang/darwin-x86/host/3.6" groups="pdk,darwin" />
   <project path="prebuilts/clang/linux-x86/host/3.6" name="platform/prebuilts/clang/linux-x86/host/3.6" groups="pdk,linux" />
@@ -488,24 +475,30 @@
 
   <project path="platform_manifest" name="platform_manifest" remote="mo" />
 
-  <!-- MinimalOS Vendor  -->
+  <!-- Vendors -->
   <project path="vendor/minimal" name="vendor_minimal" remote="mo" />
-
-  <!-- CAF repos -->
   <project path="vendor/qcom/opensource/display-frameworks" name="vendor_qcom_opensource_display-frameworks" remote="aospb" />
   <project path="vendor/qcom/opensource/dpm" name="vendor_qcom_opensource_dpm" remote="aospb" />
-
-  <!-- Slim toolchain gcc and linaro -->
-  <project path="prebuilt" name="prebuilt" remote="aospb" />
-
-  <!-- SamsungServiceMode -->
-  <project path="packages/apps/SamsungServiceMode" name="packages_apps_SamsungServiceMode" remote="aospb" />
-
-  <!-- qrngd -->
-  <project path="external/qrngd" name="external_qrngd" remote="aospb" />
-
-  <!-- ffmpeg -->
-  <project path="external/ffmpeg" name="external_ffmpeg" remote="aospb" />
-  <project path="external/stagefright-plugins" name="external_stagefright-plugins" remote="aospb" />
-
+  
+  <!-- Untracked repos -->
+  <!--
+  <project path="packages/apps/Browser" name="packages_apps_Browser" remote="aospb" />
+  <project path="packages/apps/Email" name="packages_apps_Email" remote="aospb" />
+  <project path="packages/apps/Exchange" name="packages_apps_Exchange" remote="aospb" />
+  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
+  <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="aospb" />
+  <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" />
+  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs" />
+  <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
+  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" groups="pdk-fs" />
+  <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" groups="pdk-fs" />
+  <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" groups="pdk-fs" />
+  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" groups="pdk-fs" />
+  <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" groups="pdk-fs" />
+  <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" groups="pdk-fs" />
+  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
+  <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" groups="pdk-fs" />
+  <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" groups="pdk-fs" />
+  <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" groups="pdk-fs" />
+  -->
 </manifest>
